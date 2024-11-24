@@ -1,16 +1,6 @@
-# omar_ahmad_advanced_concept
+# Advanced_Concept
 
-A new Flutter project.
+## 🎨 System Design
 
-## Getting Started
+![photo_2024-11-24_15-52-26](https://github.com/user-attachments/assets/cb1f511d-15d2-46c9-a178-c14f26ad9911)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
