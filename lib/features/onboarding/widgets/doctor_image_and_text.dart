@@ -22,6 +22,9 @@ class DoctorImageAndText extends StatelessWidget {
         ),
         Positioned(
           bottom: 30,
+          // top: 0,
+          left: 0,
+          right: 0,
           child: Text(
             "Best Doctor\nAppointment App",
             textAlign: TextAlign.center,
