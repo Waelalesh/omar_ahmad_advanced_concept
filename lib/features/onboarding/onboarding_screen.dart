@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:omar_ahmad_advanced_concept/core/helpers/extensions.dart';
 import 'package:omar_ahmad_advanced_concept/core/theme/styles.dart';
+import 'package:omar_ahmad_advanced_concept/core/widgets/app_button.dart';
 
+import '../../core/routing/routes.dart';
 import 'widgets/doc_logo_and_name.dart';
 import 'widgets/doctor_image_and_text.dart';
-import 'widgets/get_started_button.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -35,7 +37,12 @@ class OnboardingScreen extends StatelessWidget {
                   SizedBox(
                     height: 30.h,
                   ),
-                  const GetStartedButton(),
+                  AppButton(
+                    text: "Get Started",
+                    onPressed: () {
+                      context.pushNamed(Routes.logInScreen);
+                    },
+                  ),
                 ],
               ),
             )
