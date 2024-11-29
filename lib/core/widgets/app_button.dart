@@ -39,7 +39,7 @@ class AppButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         text,
-        style: TextStyles.font16WhiteMedium,
+        style: textstyle ?? TextStyles.font16WhiteSemiBold,
       ),
     );
   }
