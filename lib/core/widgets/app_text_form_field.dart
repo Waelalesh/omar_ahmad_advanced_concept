@@ -13,6 +13,8 @@ class AppTextFormField extends StatelessWidget {
   final bool? isObscureText;
   final Widget? suffixIcon;
   final Color? backgroundColor;
+  final TextEditingController? controller;
+  final Function(String?) validator;
   const AppTextFormField(
       {super.key,
       this.contentPadding,
@@ -23,11 +25,17 @@ class AppTextFormField extends StatelessWidget {
       required this.hintText,
       this.isObscureText,
       this.suffixIcon,
-       this.backgroundColor});
+      this.backgroundColor,
+      this.controller,
+      required this.validator});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      validator: (value) {
+        return validator(value);
+      },
       obscureText: isObscureText ?? false,
       decoration: InputDecoration(
           fillColor: backgroundColor ?? ColorsManager.moreLightGray,
@@ -39,14 +47,24 @@ class AppTextFormField extends StatelessWidget {
           suffixIcon: suffixIcon,
           focusedBorder: focusedBorder ??
               OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16.0),
-                  borderSide: const BorderSide(
-                      color: ColorsManager.mainBlue, width: 1.3)),
+                borderRadius: BorderRadius.circular(16.0),
+                borderSide:
+                    const BorderSide(color: ColorsManager.mainBlue, width: 1.3),
+              ),
           enabledBorder: enabledBorder ??
               OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16.0),
-                  borderSide: const BorderSide(
-                      color: ColorsManager.lighterGray, width: 1.3)),
+                borderRadius: BorderRadius.circular(16.0),
+                borderSide: const BorderSide(
+                    color: ColorsManager.lighterGray, width: 1.3),
+              ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16.0),
+            borderSide: BorderSide(width: 1.3, color: Colors.red),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16.0),
+            borderSide: BorderSide(width: 1.3, color: Colors.red),
+          ),
           hintStyle: hintStyle ?? TextStyles.font14LightGrayRegular),
       style: TextStyles.font14DarkBlueMedium,
     );

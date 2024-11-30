@@ -19,8 +19,17 @@ class $AssetsImagesGen {
   AssetGenImage get onboardingDoctor =>
       const AssetGenImage('assets/images/onboarding_doctor.png');
 
+  /// File path: assets/images/splash_screen.png
+  AssetGenImage get splashScreen =>
+      const AssetGenImage('assets/images/splash_screen.png');
+
+  /// File path: assets/images/splash_screen_android12.png
+  AssetGenImage get splashScreenAndroid12 =>
+      const AssetGenImage('assets/images/splash_screen_android12.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [onboardingDoctor];
+  List<AssetGenImage> get values =>
+      [onboardingDoctor, splashScreen, splashScreenAndroid12];
 }
 
 class $AssetsSvgsGen {
