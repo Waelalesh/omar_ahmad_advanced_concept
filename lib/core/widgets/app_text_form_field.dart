@@ -59,11 +59,11 @@ class AppTextFormField extends StatelessWidget {
               ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.0),
-            borderSide: BorderSide(width: 1.3, color: Colors.red),
+            borderSide: const BorderSide(width: 1.3, color: Colors.red),
           ),
           focusedErrorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.0),
-            borderSide: BorderSide(width: 1.3, color: Colors.red),
+            borderSide: const BorderSide(width: 1.3, color: Colors.red),
           ),
           hintStyle: hintStyle ?? TextStyles.font14LightGrayRegular),
       style: TextStyles.font14DarkBlueMedium,
