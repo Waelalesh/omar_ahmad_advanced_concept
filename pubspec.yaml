@@ -76,6 +76,12 @@ dependencies:
   # For Adapting screen and Font size
   # https://pub.dev/packages/flutter_screenutil/install
   flutter_screenutil: ^5.9.3
+  # Custom dropdown widget allows to add highly customizable dropdown widget in project
+  # https://pub.dev/packages/animated_custom_dropdown/install
+  animated_custom_dropdown: ^3.1.1
+  # collection of cool and beautiful text animations
+  # https://pub.dev/packages/animated_text_kit/install
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:
