@@ -6,7 +6,7 @@ import 'package:omar_ahmad_advanced_concept/core/helpers/extensions.dart';
 
 import '../../../../core/routing/routes.dart';
 import '../../../../core/theme/colors.dart';
-import '../../../../core/theme/styles.dart';
+import '../../../../core/theme/styles.dart'; 
 
 import '../../logic/cubit/sign_up_cubit.dart';
 import '../../logic/cubit/sign_up_state.dart';
