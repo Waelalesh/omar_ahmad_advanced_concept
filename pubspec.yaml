@@ -82,6 +82,9 @@ dependencies:
   # collection of cool and beautiful text animations
   # https://pub.dev/packages/animated_text_kit/install
   animated_text_kit: ^4.2.2
+  # for fireBase distribution and firebase services
+  # https://pub.dev/packages/firebase_core/install
+  firebase_core: ^3.9.0
 
 dev_dependencies:
   flutter_test:
