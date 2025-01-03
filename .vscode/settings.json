@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
@@ -57,3 +58,8 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false
 }
+=======
+  "cmake.sourceDirectory": "C:/Users/E.Wael/Documents/m/linux",
+  "java.configuration.updateBuildConfiguration": "interactive"
+}
+>>>>>>> 467b4022bc6cb2b939f230069752bfab57f96bab
