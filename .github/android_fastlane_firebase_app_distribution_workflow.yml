@@ -22,7 +22,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: stable
-
+          
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
