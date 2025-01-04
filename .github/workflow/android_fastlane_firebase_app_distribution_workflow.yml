@@ -18,6 +18,11 @@ jobs:
           java-version: "17"
           distribution: "temurin"
 
+      - name: Add current platform to Bundler lockfile
+        run: |
+          bundle lock --add-platform ruby
+          bundle lock --add-platform x86_64-linux
+
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
