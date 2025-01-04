@@ -9,6 +9,6 @@ void main() async {
   // to fix texts font bug in flutter_screenutils in release mode
   await ScreenUtil.ensureScreenSize();
   runApp(DocApp(
-    router: AppRouter(),  
+    router: AppRouter(),   
   ));
 }
