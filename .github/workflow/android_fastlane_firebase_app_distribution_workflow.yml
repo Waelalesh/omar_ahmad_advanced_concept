@@ -23,11 +23,6 @@ jobs:
         with:
           channel: stable
 
-      - name: Add current platform to Bundler lockfile
-        run: |
-          bundle lock --add-platform ruby
-          bundle lock --add-platform x86_64-linux
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
