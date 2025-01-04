@@ -4,7 +4,7 @@ import 'package:omar_ahmad_advanced_concept/core/routing/app_router.dart';
 import 'package:omar_ahmad_advanced_concept/core/routing/routes.dart';
 import 'package:omar_ahmad_advanced_concept/core/theme/colors.dart';
 
-class DocApp extends StatelessWidget {
+class DocApp extends StatelessWidget { 
   final AppRouter router;
   const DocApp({super.key, required this.router});
 
