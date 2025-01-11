@@ -9,7 +9,7 @@ class DocApp extends StatelessWidget {
   const DocApp({super.key, required this.router});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return ScreenUtilInit(
         designSize: const Size(375, 812),
         minTextAdapt: true,
