@@ -1,28 +1,4 @@
 {
-<<<<<<< HEAD
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/E.Wael/Documents/m/windows/flutter",
-      "program": "c:/Users/E.Wael/Documents/m/windows/flutter/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
-    }
-  ]
-}
     "version": "0.2.0",
     "configurations": [
       {
@@ -42,4 +18,5 @@
     ],
     "compounds": []
   }
->>>>>>> 467b4022bc6cb2b939f230069752bfab57f96bab
+  
+
