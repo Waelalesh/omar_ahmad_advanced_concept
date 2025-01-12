@@ -70,6 +70,9 @@ dependencies:
   # for fireBase distribution and firebase services
   # https://pub.dev/packages/firebase_core/install
   firebase_core: ^3.9.0
+  # A package provides an easy way to add shimmer effect
+  # https://pub.dev/packages/shimmer/install
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:

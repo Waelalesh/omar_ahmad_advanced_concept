@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:omar_ahmad_advanced_concept/core/assets_gen/assets.gen.dart';
-
-import '../../../../core/helpers/spacing.dart';
-import '../../../../core/theme/colors.dart';
-import '../../../../core/theme/styles.dart';
+import 'package:omar_ahmad_advanced_concept/features/home/data/models/specializations_response_model.dart';
+import 'package:omar_ahmad_advanced_concept/features/home/ui/widgets/doctors_speciality_list_view_item.dart';
 
 class DoctorsSpecialityListView extends StatelessWidget {
-  const DoctorsSpecialityListView({super.key});
+  const DoctorsSpecialityListView(
+      {super.key, required this.specializationsDataList});
+  final List<SpecializationsData?> specializationsDataList;
 
   @override
   Widget build(BuildContext context) {
@@ -16,28 +14,11 @@ class DoctorsSpecialityListView extends StatelessWidget {
       height: 100.h,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 8,
+        itemCount: specializationsDataList.length,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: EdgeInsetsDirectional.only(start: index == 0 ? 0 : 24.w),
-            child: Column(
-              children: [
-                CircleAvatar(
-                  radius: 28,
-                  backgroundColor: ColorsManager.lightBlue,
-                  child: SvgPicture.asset(
-                    Assets.svgs.generalSpeciality.path,
-                    height: 40.h,
-                    width: 40.w,
-                  ),
-                ),
-                verticalSpace(8),
-                Text(
-                  'Omar',
-                  style: TextStyles.font12DarkBlueRegular,
-                ),
-              ],
-            ),
+          return DoctorsSpecialityListViewItem(
+            data: specializationsDataList[index]!,
+            index: index,
           );
         },
       ),
