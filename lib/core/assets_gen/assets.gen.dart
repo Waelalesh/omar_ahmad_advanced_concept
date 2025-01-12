@@ -15,6 +15,17 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/bmw.png
+  AssetGenImage get bmw => const AssetGenImage('assets/images/bmw.png');
+
+  /// File path: assets/images/home_blue_pattern.png
+  AssetGenImage get homeBluePattern =>
+      const AssetGenImage('assets/images/home_blue_pattern.png');
+
+  /// File path: assets/images/home_doctor.png
+  AssetGenImage get homeDoctor =>
+      const AssetGenImage('assets/images/home_doctor.png');
+
   /// File path: assets/images/onboarding_doctor.png
   AssetGenImage get onboardingDoctor =>
       const AssetGenImage('assets/images/onboarding_doctor.png');
@@ -28,8 +39,14 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/splash_screen_android12.png');
 
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [onboardingDoctor, splashScreen, splashScreenAndroid12];
+  List<AssetGenImage> get values => [
+        bmw,
+        homeBluePattern,
+        homeDoctor,
+        onboardingDoctor,
+        splashScreen,
+        splashScreenAndroid12
+      ];
 }
 
 class $AssetsSvgsGen {
@@ -42,8 +59,17 @@ class $AssetsSvgsGen {
   SvgGenImage get docLogoLowOpacity =>
       const SvgGenImage('assets/svgs/doc_logo_low_opacity.svg');
 
+  /// File path: assets/svgs/general_speciality.svg
+  SvgGenImage get generalSpeciality =>
+      const SvgGenImage('assets/svgs/general_speciality.svg');
+
+  /// File path: assets/svgs/notifications.svg
+  SvgGenImage get notifications =>
+      const SvgGenImage('assets/svgs/notifications.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [docLogo, docLogoLowOpacity];
+  List<SvgGenImage> get values =>
+      [docLogo, docLogoLowOpacity, generalSpeciality, notifications];
 }
 
 class Assets {
