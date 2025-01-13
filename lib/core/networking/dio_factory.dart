@@ -30,7 +30,7 @@ class DioFactory {
       "Accept": "application/json",
       "Content-Type": "application/json",
       "Authorization":
-          "Bearer ${await SharedPrefHelper.getString(SharedPrefKeys.userToken)}"
+          "Bearer ${await SharedPrefHelper.getSecuredString(SharedPrefKeys.userToken)}"
     };
   }
 
