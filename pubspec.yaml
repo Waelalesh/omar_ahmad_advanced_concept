@@ -21,7 +21,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   # State managment
   # https://pub.dev/packages/flutter_bloc/install
-  flutter_bloc: ^8.1.6
+  flutter_bloc: ^9.0.0
   # Code generater (mainly used with cubit & retrifit)
   # https://pub.dev/packages/freezed/install
   freezed: ^2.5.7
@@ -64,15 +64,21 @@ dependencies:
   # Custom dropdown widget allows to add highly customizable dropdown widget in project
   # https://pub.dev/packages/animated_custom_dropdown/install
   animated_custom_dropdown: ^3.1.1
-  # collection of cool and beautiful text animations
+  # Collection of cool and beautiful text animations
   # https://pub.dev/packages/animated_text_kit/install
   animated_text_kit: ^4.2.2
-  # for fireBase distribution and firebase services
+  # For fireBase distribution and firebase services
   # https://pub.dev/packages/firebase_core/install
   firebase_core: ^3.9.0
   # A package provides an easy way to add shimmer effect
   # https://pub.dev/packages/shimmer/install
   shimmer: ^3.0.0
+  # Reading and writing simple key-value pairs
+  # https://pub.dev/packages/shared_preferences/install
+  shared_preferences: ^2.3.5
+  # Provides API to store data in secure storage
+  # https://pub.dev/packages/flutter_secure_storage/install
+  flutter_secure_storage: ^9.2.4
 
 dev_dependencies:
   flutter_test:

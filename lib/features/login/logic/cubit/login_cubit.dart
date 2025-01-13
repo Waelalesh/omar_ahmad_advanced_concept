@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:omar_ahmad_advanced_concept/core/helpers/constants.dart';
+import 'package:omar_ahmad_advanced_concept/core/helpers/shared_pref_helper.dart';
 import 'package:omar_ahmad_advanced_concept/core/networking/api_error_handler.dart';
+import 'package:omar_ahmad_advanced_concept/core/networking/dio_factory.dart';
 import 'package:omar_ahmad_advanced_concept/features/login/data/models/login_request_body.dart';
 import 'package:omar_ahmad_advanced_concept/features/login/data/repos/login_repo.dart';
 
@@ -18,9 +21,15 @@ class LoginCubit extends Cubit<LoginState> {
         email: emailController.text.trim(),
         password: passwordController.text.trim()));
     response.when(success: (loginResponse) {
+      saveUserToken(loginResponse.userData?.token ?? "");
       emit(LoginState.success(loginResponse));
     }, failure: (ErrorHandler error) {
       emit(LoginState.error(error: error.apiErrorModel.message ?? ""));
     });
+  }
+
+  Future<void> saveUserToken(String token) async {
+    await SharedPrefHelper.setData(SharedPrefKeys.userToken, token);
+    DioFactory.setTokenInToHeaderAfterLogin(token);
   }
 }
