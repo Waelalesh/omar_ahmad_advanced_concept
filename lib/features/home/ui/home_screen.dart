@@ -14,27 +14,30 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Container(
-          width: double.infinity,
-          margin: const EdgeInsets.fromLTRB(
-            20.0,
-            16.0,
-            20.0,
-            28.0,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const HomeTopBar(),
-              const DoctorsBlueContainer(),
-              verticalSpace(24.h),
-              const DoctorsSpecialitySeeAll(),
-              verticalSpace(18),
-              const SpecializationsAndDoctorsBlocBuilder()
-              // const DoctorsSpecialityListView(),
-              // verticalSpace(8),
-              // const DoctorsListView(),
-            ],
+        child: SingleChildScrollView(
+          child: Container(
+            width: double.infinity,
+            height: 1.sh,
+            margin: const EdgeInsets.fromLTRB(
+              20.0,
+              16.0,
+              20.0,
+              0,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const HomeTopBar(),
+                const DoctorsBlueContainer(),
+                verticalSpace(24),
+                const DoctorsSpecialitySeeAll(),
+                verticalSpace(18),
+                const SpecializationsAndDoctorsBlocBuilder()
+                // const DoctorsSpecialityListView(),
+                // verticalSpace(8),
+                // const DoctorsListView(),
+              ],
+            ),
           ),
         ),
       ),

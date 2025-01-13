@@ -12,7 +12,7 @@ import 'package:omar_ahmad_advanced_concept/features/sign_up/ui/sign_up_screen.d
 import '../../features/home/ui/home_screen.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(
@@ -37,13 +37,7 @@ class AppRouter {
                   child: const HomeScreen(),
                 ));
       default:
-        return MaterialPageRoute(
-          builder: (context) => Scaffold(
-            body: Center(
-              child: Text("No Route Define for ${settings.name}"),
-            ),
-          ),
-        );
+        return null;
     }
   }
 }
